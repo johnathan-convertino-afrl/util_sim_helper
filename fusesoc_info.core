@@ -1,0 +1,19 @@
+CAPI=2:
+
+name: AFRL:utility:sim_helper:1.0.0
+description: Binary files, and helper scripts for simulations.
+
+filesets:
+  bin:
+    files:
+      - bin/random.bin     : { file_type: user, copyto: . }
+      - bin/8bit_count.bin : { file_type: user, copyto: . }
+      - bin/const_data.bin : { file_type: user, copyto: . }
+      
+  py:
+    files:
+      - py/file_check.py: { file_type: user, copyto: . }
+    
+targets:
+  default:
+    filesets: [bin, py]
