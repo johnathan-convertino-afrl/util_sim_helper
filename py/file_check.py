@@ -92,6 +92,6 @@ for file in files:
 
 ## compare all md5sums to the first to make sure they are all equal, if not raise error.
 if all(element == md5sum[0] for element in md5sum):
-  print("ALL FILES MATCH WITH A MD5SUM OF:", md5sum[0])
+  print("FILES MATCH WITH A MD5SUM OF:", md5sum[0])
 else:
   raise Exception("ERROR: MD5SUM OF A FILE FAILED TO MATCH:", files, md5sum)

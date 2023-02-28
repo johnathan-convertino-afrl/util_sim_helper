@@ -38,4 +38,5 @@
 ### fusesoc
 
 * fusesoc_info.core created.
-* Simulation uses icarus to run data through the core.
+* No simulation, this contains scripts and binary data.
+  * FUTURE: Unit Tests for scripts.
