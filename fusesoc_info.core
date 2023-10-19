@@ -16,4 +16,5 @@ filesets:
     
 targets:
   default:
+    description: Default include for helper files.
     filesets: [bin, py]
